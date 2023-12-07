@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Home.HomeFragment"
+    android:layout_margin="20dp"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="100dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sophia"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Hello, Good Moring"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="@id/imageView" />
+
+        <TextView
+            android:id="@+id/tv_sophia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sophia!"
+            android:fontFamily="@font/dm_sans"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@id/textView"
+            app:layout_constraintStart_toStartOf="@id/textView"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageView"
+            app:layout_constraintBottom_toBottomOf="@id/imageView" />
+
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E6E6E6"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_search"
+            android:hint="Search"
+            android:drawablePadding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sophia"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            android:layout_marginTop="20dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            tools:layout_editor_absoluteX="25dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="163dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="10dp"
+                android:elevation="1dp"
+                app:cardBackgroundColor="#D48103"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="25dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/fit_young"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/bebas"
+                        android:text="Fit Young Woman Doing Battle Stretch Training"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.216" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/appCompatButton"
+                        android:layout_width="106dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#F6A010"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/dm_sans"
+                        android:text="Start Exercise"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/fit_young"
+                        app:layout_constraintStart_toStartOf="@+id/fit_young"
+                        app:layout_constraintTop_toBottomOf="@+id/fit_young" />
+
+                    <ImageView
+                        android:id="@+id/girl"
+                        android:layout_width="170dp"
+                        android:layout_height="280dp"
+                        android:elevation="3dp"
+                        android:src="@drawable/girlpink" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/barble"
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:elevation="3dp"
+                android:src="@drawable/damble"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.680"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.86" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SELECT YOUT GOAL"
+            android:fontFamily="@font/bebas"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintStart_toStartOf="@id/textView" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="12dp"
+            android:id="@+id/rv_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_goal"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            android:orientation="horizontal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/rv_category"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bebas"
+            android:text="CATEGORY"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/rv_goal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_category"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            android:orientation="horizontal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/bebas"
+            android:text="POPULAR EXERCISE"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/searchView"
+            app:layout_constraintTop_toBottomOf="@id/rv_category" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="196dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="See All"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/popular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/popular" />
+
+        <ImageView
+            android:id="@+id/fullshoot"
+            android:layout_width="298dp"
+            android:layout_height="155dp"
+            android:src="@drawable/fullshootwoman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/popular"
+            app:layout_constraintVertical_bias="0.014" />
+
+        <TextView
+            android:id="@+id/full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Shot Woman Stretching Arm"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/fullshoot" />
+
+        <TextView
+            android:id="@+id/beginer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner   |   "
+            android:fontFamily="@font/montserrat"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/full" />
+
+        <ImageView
+            android:id="@+id/jam"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/clock"
+            app:layout_constraintStart_toEndOf="@+id/beginer"
+            app:layout_constraintTop_toTopOf="@+id/beginer"
+            />
+
+        <TextView
+            android:id="@+id/min_satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="30 min"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toEndOf="@+id/jam"
+            app:layout_constraintTop_toTopOf="@+id/beginer" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/min_satu"
+            />
+
+        <ImageView
+            android:id="@+id/monochrome"
+            android:layout_width="298dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="20dp"
+            android:elevation="3dp"
+            android:src="@drawable/athlete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/min_satu" />
+
+        <TextView
+            android:id="@+id/practing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Athlete Practicing Monochrome"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/monochrome" />
+
+        <TextView
+            android:id="@+id/beginer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner   |   "
+            android:fontFamily="@font/montserrat"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/practing" />
+
+        <ImageView
+            android:id="@+id/jam1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/clock"
+            app:layout_constraintStart_toEndOf="@+id/beginer1"
+            app:layout_constraintTop_toTopOf="@+id/beginer1"
+            />
+        <TextView
+            android:id="@+id/min_dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="50 min"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.035"
+            app:layout_constraintStart_toEndOf="@+id/jam1"
+            app:layout_constraintTop_toTopOf="@+id/beginer1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/beginer1"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/meal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/bebas"
+            android:text="MEAL PLANS"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/searchView"
+            app:layout_constraintTop_toBottomOf="@id/jam1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/see_all1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="196dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="See All"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/meal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/meal" />
+
+        <ImageView
+            android:id="@+id/greeksalad"
+            android:layout_width="298dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="15dp"
+            android:elevation="3dp"
+            android:src="@drawable/greeksalad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/meal"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/salad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Greek Salad with lettuce, green, onio,"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/greeksalad" />
+
+        <TextView
+            android:id="@+id/kcal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 150 kcal "
+            android:fontFamily="@font/montserrat"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/salad1" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/kcal1"
+            />
+
+
+        <ImageView
+            android:id="@+id/salad22"
+            android:layout_width="298dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="15dp"
+            android:elevation="3dp"
+            android:src="@drawable/salad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kcal1"
+            app:layout_constraintVertical_bias="0.051" />
+
+        <TextView
+            android:id="@+id/salad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Salad Of Fresh Vegetable"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/salad22" />
+
+        <TextView
+            android:id="@+id/kcal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 150 kcal "
+            android:fontFamily="@font/montserrat"
+            android:textSize="10sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/salad2" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/kcal2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/exe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/bebas"
+            android:text="ADDITIONAL EXERCISE"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/searchView"
+            app:layout_constraintTop_toBottomOf="@id/kcal2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/see_all2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="196dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="See All"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/exe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/exe" />
+
+
+        <ImageView
+            android:id="@+id/g_exe"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="1dp"
+            android:background="#FFC107"
+            android:elevation="3dp"
+            android:src="@drawable/jumping"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exe"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <TextView
+            android:id="@+id/exe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Exercise with Jumping"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/g_exe"
+            app:layout_constraintTop_toTopOf="@+id/g_exe" />
+
+        <TextView
+            android:id="@+id/exe11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Rope"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/exe1"
+            app:layout_constraintStart_toEndOf="@id/g_exe1"
+            />
+
+        <ImageView
+            android:id="@+id/api1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/api"
+            app:layout_constraintStart_toEndOf="@+id/g_exe"
+            app:layout_constraintTop_toBottomOf="@id/exe11"
+            app:layout_constraintStart_toStartOf="@id/exe1"/>
+
+        <TextView
+            android:id="@+id/kcal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="110kcal   |  "
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/api1"
+            app:layout_constraintTop_toBottomOf="@id/exe11" />
+
+        <ImageView
+            android:id="@+id/jam3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/clock"
+            app:layout_constraintStart_toEndOf="@+id/kcal3"
+            app:layout_constraintTop_toBottomOf="@id/exe11" />
+
+        <TextView
+            android:id="@+id/sepuluh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="10 min"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/jam3"
+            app:layout_constraintTop_toBottomOf="@id/exe11" />
+
+        <TextView
+            android:id="@+id/beginer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Beginner  "
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/g_exe"
+            app:layout_constraintTop_toBottomOf="@id/sepuluh" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/beginer2" />
+
+        <ImageView
+            android:id="@+id/g_exe1"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="20dp"
+            android:background="#00BCD4"
+            android:elevation="3dp"
+            android:src="@drawable/hold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/exe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Exercises with Holding Jumping"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/g_exe1"
+            app:layout_constraintTop_toTopOf="@+id/g_exe1" />
+
+        <TextView
+            android:id="@+id/exe22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Rope"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/exe2"
+            app:layout_constraintStart_toEndOf="@id/g_exe1"
+             />
+
+        <ImageView
+            android:id="@+id/api2"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/api"
+            app:layout_constraintStart_toEndOf="@+id/g_exe1"
+            app:layout_constraintTop_toBottomOf="@id/exe22"
+            app:layout_constraintStart_toStartOf="@id/exe22"/>
+
+        <TextView
+            android:id="@+id/kcal4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="135 kcal   |  "
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/api2"
+            app:layout_constraintTop_toBottomOf="@id/exe22" />
+
+        <ImageView
+            android:id="@+id/jam4"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/clock"
+            app:layout_constraintStart_toEndOf="@+id/kcal4"
+            app:layout_constraintTop_toBottomOf="@id/exe22" />
+
+        <TextView
+            android:id="@+id/delapan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="10 min"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/jam4"
+            app:layout_constraintTop_toBottomOf="@id/exe22" />
+
+        <TextView
+            android:id="@+id/beginer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Beginner  "
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/g_exe1"
+            app:layout_constraintStart_toEndOf="@id/g_exe1"
+            app:layout_constraintTop_toBottomOf="@id/delapan"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/beginer3" />
+
+        <ImageView
+            android:id="@+id/g_exe2"
+            android:layout_width="91dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="20dp"
+            android:background="#00BCD4"
+            android:elevation="3dp"
+            android:src="@drawable/womandamble"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3"
+            app:layout_constraintVertical_bias="0.84" />
+
+        <TextView
+            android:id="@+id/exe3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Exercises with Sitting"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/g_exe2"
+            app:layout_constraintTop_toTopOf="@+id/g_exe2" />
+
+        <TextView
+            android:id="@+id/exe33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Dumbbells"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/exe3"
+            app:layout_constraintStart_toEndOf="@id/g_exe2" />
+
+        <ImageView
+            android:id="@+id/api3"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/api"
+            app:layout_constraintStart_toEndOf="@+id/g_exe2"
+            app:layout_constraintTop_toBottomOf="@id/exe33"
+            app:layout_constraintStart_toStartOf="@id/exe33"/>
+
+        <TextView
+            android:id="@+id/kcal5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="135 kcal   |  "
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/api3"
+            app:layout_constraintTop_toBottomOf="@id/exe33" />
+
+        <ImageView
+            android:id="@+id/jam5"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/clock"
+            app:layout_constraintStart_toEndOf="@+id/kcal5"
+            app:layout_constraintTop_toBottomOf="@id/exe33" />
+
+        <TextView
+            android:id="@+id/lima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:text="5 min"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@id/jam5"
+            app:layout_constraintTop_toBottomOf="@id/exe33" />
+
+        <TextView
+            android:id="@+id/beginer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Beginner  "
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/g_exe2"
+            app:layout_constraintStart_toEndOf="@id/g_exe2"
+            app:layout_constraintTop_toBottomOf="@id/lima"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">UjianTengahSemester</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <integer-array name="category_photo">
+        <item>@drawable/yoga</item>
+        <item>@drawable/gym</item>
+        <item>@drawable/cardio</item>
+        <item>@drawable/stretch</item>
+        <item>@drawable/fullbody</item>
+    </integer-array>
+
+    <string-array name="category_title">
+        <item>Yoga</item>
+        <item>Gym</item>
+        <item>Cardio</item>
+        <item>Stretch</item>
+        <item>Full Body</item>
+    </string-array>
+
+
+</resources>
